@@ -1,11 +1,10 @@
-Role Vector
+Role Name
 =========
 
-Роль для установки vector. Задаваемые переменные
+Роль для установки vector.
 
-```
-версия (vector_version)
-директория установки (vector_path)
-конфигурационный файл (vector_config)
+- Установка vector
+- Создание systemd unit Vector
+- Конфигурирование vector на передачу данных в clickhouse
 
-```
+
