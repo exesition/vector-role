@@ -1,0 +1,17 @@
+node("jen-agent"){
+    stage("Git checkout"){
+        git branch: 'master', url: 'https://github.com/aragastmatb/example-playbook'
+    }
+    stage("Prepare"){
+        sh 'mkdir -p /opt/jdk/openjdk-11'
+        }
+    stage("Run playbook"){
+        if ( "${prod_run}" == "True" ){
+            sh 'ansible-playbook site.yml -i inventory/prod.yml'
+
+        }
+        else{
+            sh 'ansible-playbook site.yml -i inventory/prod.yml --check --diff'
+        }        
+    }
+}
