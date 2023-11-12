@@ -1,0 +1,8 @@
+ansible==2.10.7
+ansible-lint
+docker==6.0.1
+flake8
+lint
+molecule==3.5.2
+molecule-docker==1.1.0
+yamllint
