@@ -1,0 +1,4 @@
+---
+roles:
+  - name: "vector-role"
+    src: https://github.com/exesition/vector-role

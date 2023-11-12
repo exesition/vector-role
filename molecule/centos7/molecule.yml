@@ -1,0 +1,17 @@
+---
+dependency:
+  name: galaxy
+  options:
+    ignore-certs: True
+    ignore-errors: True
+    role-file: ./requirements.yml
+driver:
+  name: docker
+platforms:
+  - name: instance
+    image: docker.io/pycontribs/centos:7
+    pre_build_image: true
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
